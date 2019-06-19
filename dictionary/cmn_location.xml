@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="all_tables.text_index_translations=true" label="Location" max_length="40" name="cmn_location" text_index="true" type="collection">
+        <element label="Requested for" max_length="32" name="x_58872_needit_u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Request type" max_length="40" name="x_58872_needit_u_request_type" type="string">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="When Needed" max_length="40" name="x_58872_needit_u_when_needed" type="glide_date_time"/>
+        <index name="index">
+            <element name="x_58872_needit_u_requested_for"/>
+        </index>
+    </element>
+</database>
